@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemeVerse - Upload Meme</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="dark-mode">
+    <header>
+        <h1>Upload Meme</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="explorer.html">Meme Explorer</a></li>
+                <li><a href="upload.html">Upload Meme</a></li>
+                <li><a href="meme-details.html">Meme Details</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+            </ul>
+        </nav>
+        <button id="dark-mode-toggle">🌙</button>
+    </header>
+    <main>
+        <section id="meme-upload">
+            <div class="upload-form">
+                <label for="meme-image">Upload Meme (JPG, PNG, GIF):</label>
+                <input type="file" id="meme-image" accept="image/jpeg, image/png, image/gif" />
+            
+                <label for="meme-caption">Caption:</label>
+                <textarea id="meme-caption" placeholder="Enter a funny caption..."></textarea>
+            
+                <!-- Add the Preview button here -->
+                <button id="preview-button">Preview Meme</button>
+                <button id="generate-caption-button">Generate Caption (AI)</button>
+                <button id="upload-meme-button">Upload Meme</button>
+            </div>
+            
+            <div id="preview-container">
+                <h3>Preview:</h3>
+                <img id="preview-image" src="" alt="Preview Meme" style="display: none;" />
+                <p id="preview-caption"></p>
+            </div>
+
+            <div id="upload-status">
+                <!-- Upload status will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 MemeVerse</p>
+    </footer>
+    <script src="../scripts.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemeVerse - Create Meme</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="dark-mode">
+    <header>
+        <h1>Create Meme</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="explorer.html">Meme Explorer</a></li>
+                <li><a href="upload.html">Create Meme</a></li>
+            </ul>
+        </nav>
+        <button id="dark-mode-toggle">🌙</button>
+    </header>
+    <main>
+        <section id="meme-creator">
+            <h2>Create Your Meme</h2>
+            <div class="meme-form">
+                <label for="meme-template">Choose a Template:</label>
+                <select id="meme-template">
+                    
+                    <option value="" disabled selected>Select a template</option>
+                </select>
+
+                <label for="top-text">Top Text:</label>
+                <input type="text" id="top-text" placeholder="Enter top text" />
+
+                <label for="bottom-text">Bottom Text:</label>
+                <input type="text" id="bottom-text" placeholder="Enter bottom text" />
+
+                <button id="generate-meme-button">Generate Meme</button>
+            </div>
+
+            <div id="generated-meme-container">
+                <h3>Your Meme:</h3>
+                <img id="generated-meme" src="" alt="Generated Meme" style="display: none;" />
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 MemeVerse</p>
+    </footer>
+    <script src="../scripts.js"></script>
+</body>
+</html> -->
+

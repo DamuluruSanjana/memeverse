@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemeVerse - Meme Explorer</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="dark-mode">
+    <header>
+        <h1>Meme Explorer</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="explorer.html">Meme Explorer</a></li>
+                <li><a href="upload.html">Upload Meme</a></li>
+                <li><a href="meme-details.html">Meme Details</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+            </ul>
+        </nav>
+        <button id="dark-mode-toggle">🌙</button>
+    </header>
+    <main>
+        <section id="meme-explorer">
+            <h2>Explore Memes</h2>
+            <div class="filters">
+                <label for="category-filter">Category:</label>
+                <select id="category-filter">
+                    <option value="trending">Trending</option>
+                    <option value="new">New</option>
+                    <option value="classic">Classic</option>
+                    <option value="random">Random</option>
+                </select>
+
+                <label for="sort-by">Sort By:</label>
+                <select id="sort-by">
+                    <option value="likes">Likes</option>
+                    <option value="date">Date</option>
+                    <option value="comments">Comments</option>
+                </select>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search for memes..." />
+                <button id="search-button">Search</button>
+            </div>
+
+            <div id="loading-spinner" class="loading-spinner">Loading...</div>
+            <div id="memes-container"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 MemeVerse</p>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../scripts.js"></script>
+</body>
+</html>

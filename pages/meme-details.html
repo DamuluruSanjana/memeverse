@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemeVerse - Meme Details</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="dark-mode">
+    <header>
+        <h1>Meme Details</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="explorer.html">Meme Explorer</a></li>
+                <li><a href="upload.html">Upload Meme</a></li>
+                <li><a href="meme-details.html">Meme Details</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+            </ul>
+        </nav>
+        <button id="dark-mode-toggle">🌙</button>
+    </header>
+    <main>
+        <section id="meme-details">
+            <h2 id="meme-title"></h2>
+            <img id="meme-image" src="images\meme pic.jpg" alt="Meme Image" />
+            <div class="meme-actions">
+                <button id="like-button">❤️ <span id="like-count">64</span></button>
+                <button id="share-button">🔗 Share</button>
+            </div>
+            <div class="meme-stats">
+                <p>Likes: <span id="meme-likes">765</span></p>
+                <p>Comments: <span id="meme-comments">9864</span></p>
+            </div>
+            <div class="comment-section">
+                <h3>Comments</h3>
+                <div id="comments-list"></div>
+                <form id="comment-form">
+                    <textarea id="comment-input" placeholder="Add a comment..." required></textarea>
+                    <button type="submit">Post Comment</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <br><br>
+    <footer>
+        <p>&copy; 2023 MemeVerse</p>
+    </footer>
+    <script src="../scripts.js"></script>
+</body>
+</html>

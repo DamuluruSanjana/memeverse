@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemeVerse - Profile</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="dark-mode">
+    <header>
+        <h1>User Profile</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explorer.html">Meme Explorer</a></li>
+                <li><a href="upload.html">Upload Meme</a></li>
+                <li><a href="meme-details.html">Meme Details</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+            </ul>
+        </nav>
+        <button id="dark-mode-toggle">🌙</button>
+    </header>
+    <main>
+        <section id="user-profile">
+            <h2>Your Profile</h2>
+            <div class="profile-info">
+                <div class="profile-picture">
+                    <img id="profile-pic" src="https://via.placeholder.com/150" alt="Profile Picture" />
+                    <input type="file" id="profile-pic-upload" accept="image/jpeg, image/png" />
+                </div>
+                <div class="profile-details">
+                    <label for="profile-name">Name:</label>
+                    <input type="text" id="profile-name" placeholder="Enter your name" />
+                    <label for="profile-bio">Bio:</label>
+                    <textarea id="profile-bio" placeholder="Tell us about yourself..."></textarea>
+                    <button id="save-profile-button">Save Profile</button>
+                </div>
+            </div>
+
+            <div class="user-memes">
+                <h3>Your Uploaded Memes</h3>
+                <div id="uploaded-memes-container"></div>
+            </div>
+
+            <div class="liked-memes">
+                <h3>Your Liked Memes</h3>
+                <div id="liked-memes-container"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 MemeVerse</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
