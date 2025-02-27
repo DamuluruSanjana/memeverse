@@ -22,3 +22,5 @@ MemeVerse is a fun and interactive meme platform where users can explore, upload
 2. **Upload Your Own** – Add captions and share memes via ImgBB  
 3. **Customize Profile** – Edit name, bio, and profile picture  
 4. **Like & Engage** – Interact with memes and climb the leaderboard  
+
+My Vercel link for MemeVerse project : https://memeverse-git-main-lakshmi-sanjana-ds-projects.vercel.app
